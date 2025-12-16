@@ -927,3 +927,81 @@ img {
   color: #666;
   font-size: 14px;
 }
+/* --- TEXT PAGES STYLING --- */
+.pages {
+  padding-top: calc(var(--header-height) + 60px); /* Отступ от шапки */
+  padding-bottom: 80px;
+  background-color: var(--color-bg);
+  min-height: 100vh;
+}
+
+.pages__wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 40px;
+  /* Эффект брутализма: жесткая тень */
+  box-shadow: 8px 8px 0 var(--color-border);
+}
+
+/* Типографика для документов */
+.pages h1 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 5vw, 48px);
+  color: var(--color-primary); /* Acid Lime заголовок */
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.pages h2 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  color: var(--color-secondary);
+  margin-top: 40px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.pages p, .pages li {
+  font-family: var(--font-body);
+  color: #cccccc;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.pages strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+.pages ul {
+  margin-left: 20px;
+  margin-bottom: 24px;
+}
+
+.pages li {
+  list-style-type: disc;
+  padding-left: 5px;
+}
+
+.pages li::marker {
+  color: var(--color-primary); /* Лаймовые маркеры списка */
+}
+
+.pages a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: var(--transition);
+}
+
+.pages a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  text-decoration: none;
+}
