@@ -948,7 +948,7 @@ img {
 /* Типографика для документов */
 .pages h1 {
   font-family: var(--font-display);
-  font-size: clamp(32px, 5vw, 48px);
+  font-size: clamp(20px, 5vw, 48px);
   color: var(--color-primary); /* Acid Lime заголовок */
   margin-bottom: 32px;
   border-bottom: 1px solid var(--color-border);
